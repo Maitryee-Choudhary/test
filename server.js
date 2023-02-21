@@ -4,7 +4,7 @@ const colors = require('colors');
 const morgan = require('morgan');
 const transaction = require('./routes/transaction');
 const user = require('./routes/user');
-const connectDB = require('../backend/config/db');
+const connectDB = require('./config/db');
 
 dotenv.config({path: './config/config.env'});
 const PORT = process.env.PORT || 5000;
